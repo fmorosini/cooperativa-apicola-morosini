@@ -78,7 +78,8 @@ nav ul li a {
 
 nav ul li a:hover {
 
-   color: rgb(235,201,47);   
+   color: rgb(235,201,47);  
+   font-size: 2.8rem;
 
 }
 
@@ -99,6 +100,8 @@ main #mainFoto {
    height: auto;
 
 }
+
+
 
 main #divContieneMainHome {
 
@@ -151,7 +154,8 @@ footer {
 .fondoVerdeClaro {
 
 
-    background-color: rgb(209,224,107);
+    background: rgb(209,224,107);
+    background: linear-gradient(90deg, rgba(209,224,107,1) 0%, rgba(255,255,255,1) 100%);
 
 }
 
@@ -421,3 +425,42 @@ input{
 }
 
 /* hasta acá Grid de historia.html */
+
+/* Animaciones index */
+
+
+@keyframes agrandaImagen {
+
+    from {transform: scale(0.2)}
+    to {transform: scale(1.0)}
+
+}
+
+.animaImagenHome {
+
+    animation: agrandaImagen 1s 1;
+
+}
+
+@keyframes roteiyon {
+
+    0% {transform: rotate(0deg)}
+    25% {transform: rotate(90deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100% {transform: rotate(360deg)}
+
+}
+
+.rotaLoco {
+
+    animation: roteiyon;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+    animation-delay: 0s;
+
+}
+
+
+/* Fin animaciones index */
