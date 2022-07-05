@@ -103,10 +103,12 @@ main #mainFoto {
 
 .principal {
 
+    /*
     border: solid 1px grey;
-    margin: 20px;
-    padding: 20px;
+    margin: 2rem;
+    padding: 2rem;
     border-radius: 2rem;
+    */
     background-color: rgb(235,201,47); ;
 
 }
