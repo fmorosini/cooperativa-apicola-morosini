@@ -1,0 +1,69 @@
+@media screen and (min-width: 280px) and (max-width: 1024px)  { 
+
+    #sectionContacto {
+  
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 1fr;
+  
+    }
+
+    #form {
+
+        align-items: stretch;
+
+    }
+  
+  }
+  
+  @media screen and (min-width: 1024px) {
+  
+    #sectionContacto {
+  
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+  
+    }
+
+    #form {
+
+        align-items: center;
+
+    }
+  
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 1024px)  { 
+
+    #divContieneMainHistoria {
+  
+        grid-template-columns: 1fr;
+        grid-template-areas: "imagenHistoriaArriba" "textoHistoria" "imagenHistoriaAbajo";
+        margin: 0;
+        padding: 0;
+        justify-items: center;
+    }
+
+    #mainHistoria {
+
+        align-content: center;
+        margin: 1rem;
+        padding: 1rem;
+
+    }
+  
+  }
+  
+  @media screen and (min-width: 1024px) {
+  
+    #divContieneMainHistoria {
+  
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "imagenHistoriaArriba textoHistoria"
+                         "imagenHistoriaAbajo textoHistoria";
+        margin: 2rem;
+        padding: 2rem;
+  
+    }
+  
+  }

@@ -1,0 +1,38 @@
+/* Animaciones index */
+
+
+@keyframes agrandaImagen {
+
+    from {transform: scale(0.2)}
+    to {transform: scale(1.0)}
+
+}
+
+.animaImagenHome {
+
+    animation: agrandaImagen 1s 1;
+
+}
+
+@keyframes roteiyon {
+
+    0% {transform: rotate(0deg)}
+    25% {transform: rotate(90deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100% {transform: rotate(360deg)}
+
+}
+
+.rotaLoco {
+
+    animation: roteiyon;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+    animation-delay: 0s;
+
+}
+
+
+/* Fin animaciones index */

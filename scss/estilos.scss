@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,400&display=swap');
+
+$fondo-amarillo: rgb(235,201,47); 
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+
+    font-size: 62.5%;
+    font-family: 'Roboto Flex', sans-serif;
+
+}
+
+h1 {
+
+    font-size: 3rem;
+
+}
+
+h2 {
+
+    font-size: 2rem;
+}
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    nav {
+
+        color: rgb(196,139,28);
+    
+    }
+    
+}
+
+#logo {
+
+   height: 10rem;
+
+}
+
+nav ul {
+
+    display: inline;
+    margin: auto 0;
+
+    li {
+
+        display: inline;
+        margin-right: 10px;
+        text-decoration: none;
+        font-size: 2.5rem;
+
+        a, .itemNav {
+
+            text-decoration: none;
+            color: rgb(255,137,28);
+
+            &:hover {
+
+                color: $fondo-amarillo; 
+                font-size: 2.8rem;
+             
+             }
+        
+        }
+    }
+
+}
+
+
+
+nav ul li a 
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+main #mainFoto {
+
+   height: auto;
+   width: 100%;
+
+}
+
+.principal {
+
+    /*
+    border: solid 1px grey;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    */
+    background-color: $fondo-amarillo;
+
+}
+
+/*
+
+#divContieneMainHome {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px grey;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 2rem;
+    background-color: $fondo-amarillo;
+
+}
+*/
+
+
+footer {
+
+    width: 100%;
+    height: 15vh;
+
+}
+
+
+#cajaFooter {
+
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    height: 15vh;
+
+}
+
+
+
+.textoPie {
+
+    font-size: 1.5rem;
+
+}
+
+.alineacionDerecha {
+
+    text-align: right;
+
+}
+
+.fondoVerdeClaro {
+
+
+    background: rgb(209,224,107);
+    background: linear-gradient(90deg, rgba(209,224,107,1) 0%, rgba(255,255,255,1) 100%);
+
+}
+
+#iconosSocial {
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    justify-content: space-between;
+}
+
+#iconosSocial img {
+
+    height: 50px;
+
+}
+
+.flexColumnasCentradas {
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+
+}
+
+section {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    align-content: space-between;
+
+}
+
+article {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: 2rem;
+    margin: 2rem;
+    border: solid 1px grey;
+    border-radius: 2rem;
+    width: 100%;
+    background-color: rgb(235,201,47);
+}
+
+#article2AcercaDe {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+article img {
+
+    max-width: 30%;
+    margin: 2rem;
+
+}
+
+article div {
+
+    padding: 20px;
+    
+
+}
+
+article div h2 {
+
+    padding-bottom: 20px;
+
+}
+
+
+span,
+p {
+
+    font-size: 1.8rem;
+    
+
+}
+
+.parrafoHistoria {
+
+    padding-bottom: 1rem;
+
+}
+
+/* Para el Grid de contacto.html */
+
+#sectionContacto {
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    justify-content: space-around;
+    justify-items: stretch;
+    align-items: stretch;
+    align-content: space-evenly;
+
+}
+
+#form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    
+}
+
+
+
+
+
+#form div {
+
+    padding-bottom: 1rem;    
+
+}
+
+label {
+
+    font-size: 1.5rem;
+
+}
+
+input{
+
+    width: 100%;
+
+}
+
+/* hasta acá Grid de contacto.html */
+
+
+#mainHistoria {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    height: auto;
+    padding: 2rem;
+    margin: 2rem;
+
+}
+
+/* Grid de historia.html */
+
+#divContieneMainHistoria {
+
+    /*
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: solid 1px grey;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 2rem;
+    background-color: rgb(235,201,47);
+    align-content: flex-start;
+    */
+
+    display: grid;
+    border: solid 1px grey;    
+    border-radius: 2rem;
+    background-color: $fondo-amarillo;   
+    column-gap: 4rem;
+    row-gap: 4rem;    
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+
+#textoHistoria {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#tituloHistoria {
+
+    padding-bottom: 2rem;
+    text-align: center;
+
+}
+
+/* hasta acá Grid de historia.html */
+
+@import "animaciones";
+@import "media_queries";
