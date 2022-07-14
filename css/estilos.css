@@ -112,9 +112,8 @@ footer {
   flex-direction: row;
   height: 15vh;
   justify-content: space-between; }
-
-#iconosSocial img {
-  height: 50px; }
+  #iconosSocial img {
+    height: 50px; }
 
 .flexColumnasCentradas {
   flex-direction: column;
@@ -141,21 +140,18 @@ article {
   border-radius: 2rem;
   width: 100%;
   background-color: #ebc92f; }
+  article img {
+    max-width: 30%;
+    margin: 2rem; }
+  article div {
+    padding: 20px; }
+    article div h2 {
+      padding-bottom: 20px; }
 
 #article2AcercaDe {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-
-article img {
-  max-width: 30%;
-  margin: 2rem; }
-
-article div {
-  padding: 20px; }
-
-article div h2 {
-  padding-bottom: 20px; }
 
 span,
 p {
@@ -180,9 +176,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; }
-
-#form div {
-  padding-bottom: 1rem; }
+  #form div {
+    padding-bottom: 1rem; }
 
 label {
   font-size: 1.5rem; }

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,400&display=swap');
 
 $fondo-amarillo: rgb(235,201,47); 
+$altura-caja-footer: 15vh;
+$altura-logo: 10rem;
 
 * {
 
@@ -49,7 +51,7 @@ header {
 
 #logo {
 
-   height: 10rem;
+   height: $altura-logo;
 
 }
 
@@ -138,7 +140,7 @@ main #mainFoto {
 footer {
 
     width: 100%;
-    height: 15vh;
+    height: $altura-caja-footer;
 
 }
 
@@ -150,7 +152,7 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
     align-items: center;
-    height: 15vh;
+    height: $altura-caja-footer;
 
 }
 
@@ -183,13 +185,15 @@ footer {
     flex-direction: row;
     height: 15vh;
     justify-content: space-between;
+
+    img {
+
+        height: 50px;
+    
+    }
 }
 
-#iconosSocial img {
 
-    height: 50px;
-
-}
 
 .flexColumnasCentradas {
 
@@ -223,7 +227,28 @@ article {
     border: solid 1px grey;
     border-radius: 2rem;
     width: 100%;
-    background-color: rgb(235,201,47);
+    background-color: $fondo-amarillo;
+
+        img {
+
+            max-width: 30%;
+            margin: 2rem;
+        
+        }
+
+        div {
+
+            padding: 20px;
+            
+            h2 {
+
+                padding-bottom: 20px;
+            
+            }
+        }
+
+
+    
 }
 
 #article2AcercaDe {
@@ -234,25 +259,7 @@ article {
    
 }
 
-article img {
 
-    max-width: 30%;
-    margin: 2rem;
-
-}
-
-article div {
-
-    padding: 20px;
-    
-
-}
-
-article div h2 {
-
-    padding-bottom: 20px;
-
-}
 
 
 span,
@@ -291,18 +298,13 @@ p {
     flex-direction: column;
     justify-content: space-evenly;
     
+    div {
+
+        padding-bottom: 1rem;    
     
+    }
 }
 
-
-
-
-
-#form div {
-
-    padding-bottom: 1rem;    
-
-}
 
 label {
 
